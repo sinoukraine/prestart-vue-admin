@@ -9,14 +9,15 @@ import NotFoundPage from '../pages/404.vue';
 var routes = [
   {
     path: '/',
+    alias: '/prestarts',
     component: PrestartsPage,
     name: 'prestarts'
   },
-  {
+  /*{
     path: '/prestarts', //how we name the url path
     component: PrestartsPage, //how url path should be
     name: 'prestarts'
-  },
+  },*/
   {
     path: '/trips', //how we name the url path
     component: TripsPage, //how url path should be

@@ -13,10 +13,10 @@ defineRule('required', required);
 defineRule('email', email);
 defineRule('min', min);*/
 // Import Framework7
-import Framework7 from 'framework7/lite-bundle';
+//import Framework7 from 'framework7/lite-bundle';
 
 // Import Framework7-Vue Plugin
-import Framework7Vue, { registerComponents } from 'framework7-vue/bundle';
+//import Framework7Vue, { registerComponents } from 'framework7-vue/bundle';
 import PrimeVue from 'primevue/config';
 
 
@@ -41,7 +41,7 @@ import '../css/app.scss';
 import App from '../components/app.vue';
 
 // Init Framework7-Vue Plugin
-Framework7.use(Framework7Vue);
+/*Framework7.use(Framework7Vue);*/
 
 // Init App
 const app = createApp(App);
@@ -50,8 +50,8 @@ const app = createApp(App);
 import routes from '../js/routes.js';
 
 const router = createRouter({
-  history: createWebHistory('/'),
-  routes,  
+  history: createWebHistory(),
+  routes,
   linkActiveClass: 'active'
 })
 
@@ -67,7 +67,7 @@ const i18n = createI18n({
 })
 
 // Register Framework7 Vue components
-registerComponents(app);
+//registerComponents(app);
 
 app.use(PrimeVue);
 app.use(store)

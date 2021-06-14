@@ -1,24 +1,25 @@
 <template>
   <f7-page name="home">
-    <f7-navbar>
+    <!--<f7-navbar>
       <f7-nav-left>
         <f7-link>
           <img class="logo" src="http://android.app.quiktrak.eu/prestart-admin/resources/images/logo_big.png" alt="">
-        </f7-link>   
-        <TabMenu :model="navItems">
-          <template #item="{item}">
-              <a :href="item.url">{{item.label}}</a>
-          </template>
-        </TabMenu>
-        <router-view />
+        </f7-link>
+
       </f7-nav-left>
       <f7-nav-title></f7-nav-title>
       <f7-nav-right>
         <f7-link></f7-link>
       </f7-nav-right>
     </f7-navbar>
-    <f7-block>
-      
+    <f7-block>-->
+
+      <!--<TabMenu :model="navItems">
+        <template #item="{item}">
+          <a :href="item.url">{{item.label}}</a>
+        </template>
+      </TabMenu>-->
+
       <f7-row>
 
         <!--TOP USAGE TABLE-->
@@ -30,7 +31,7 @@
       </f7-row>
 
 
-    </f7-block>
+<!--    </f7-block>-->
 
   </f7-page>
 </template>
@@ -63,7 +64,7 @@ import { ref } from 'vue';
             {label: 'Edit', icon: 'pi pi-fw pi-pencil', to: '/presets'},
             {label: 'Settings', icon: 'pi pi-fw pi-cog', to: '/'}*/
         ])
-        
+
         return { navItems }
     },
     data(){
