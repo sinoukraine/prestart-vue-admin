@@ -10,6 +10,7 @@
               <a :href="item.url">{{item.label}}</a>
           </template>
         </TabMenu>
+        <router-view />
       </f7-nav-left>
       <f7-nav-title></f7-nav-title>
       <f7-nav-right>

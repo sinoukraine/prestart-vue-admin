@@ -126,29 +126,7 @@
       </f7-list>
     </f7-popover>
 
-    <asset-location-modal
-      v-model:isOpened = isAssetLocationModalOpened
-      :selectedAsset = "selectedAsset"
-    />
-    <sms-history-modal
-        v-model:isOpened = isSmsHistoryModalOpened
-        :selectedAsset = "selectedAsset"
-    />
-    <change-sim-status-modal
-        v-model:isOpened = isChangeSimStatusModalOpened
-        :selectedAsset = "selectedAsset"
-        @statusChanged = "loadLazyData()"
-    />
-    <replace-sim-modal
-        v-model:isOpened = isReplaceSimModalOpened
-        :selectedAsset = "selectedAsset"
-        @statusChanged = "loadLazyData()"
-    />
-    <send-command-modal
-        v-model:isOpened = isSendCommandModalOpened
-        :selectedAsset = "selectedAsset"
-        @statusChanged = "loadLazyData()"
-    />
+    
   </div>  
 </template>
 

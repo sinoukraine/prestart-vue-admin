@@ -13,7 +13,7 @@ var routes = [
     name: 'prestarts'
   },
   {
-    path: '/presets', //how we name the url path
+    path: '/prestarts', //how we name the url path
     component: PrestartsPage, //how url path should be
     name: 'prestarts'
   },
